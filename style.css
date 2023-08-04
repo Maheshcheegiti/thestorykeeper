@@ -87,7 +87,7 @@ button.login{
 }
 
 button:hover{
-    background-color: #A78295;
+    background-color: var(--third-color);
     color: var(--white-color);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
 }
@@ -97,7 +97,8 @@ button:hover{
     padding: 0px 250px;
     background-color: var(--first-color);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
-    position: relative;
+    position: sticky;
+    top: 0;
 }
 
 .nav ul{
@@ -109,6 +110,7 @@ button:hover{
 .nav ul a{
     color: var(--white-color);
     text-decoration: none;
+    list-style: none;
     font-size: 20px;
     padding: 10px;
     transition: all 0.5s;
@@ -146,4 +148,99 @@ button:hover{
 
 .button.getstarted{
     margin-top: 20px;
+}
+
+/* footer */
+.footer{
+    padding: 0 250px;
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+
+.footer a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--white-color);
+}
+
+.footer-nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer-nav ul li{
+    padding-right: 50px;
+    border-right: 2px solid var(--third-color);
+    transition: all 0.5s;
+}
+
+.footer-nav ul li:hover{
+    color: var(--third-color);
+    transform: translateX(10px);
+}
+
+.footer-about{
+    display: flex;
+}
+
+.footer-about div{
+    border-right: 2px solid var(--third-color);
+}
+
+.footer-about .f-about-1{
+    width:30%;
+    padding-right: 20px;
+}
+
+.footer-about .f-about-2,.footer-about .f-about-3,.footer-about .f-about-4{
+    padding: 0 20px;
+    width: 33.3%;
+}
+
+.footer-about .f-about-4{
+    border: none;
+}
+
+.footer-about div h3{
+    padding-bottom: 10px;
+}
+
+.footer-about div li{
+    padding-bottom: 10px;
+    transition: all 0.5s;
+}
+
+.footer-about div li:hover{
+    color: var(--third-color);
+    transform: translateX(10px);
+}
+
+.footer-about .f-about-4 li:hover{
+    transform: scale(1.2);
+}
+
+.f-about-4 ul{
+    display: flex;
+}
+
+.f-about-4 ul li{
+    font-size: 25px;
+    padding-right: 20px;
+}
+
+.footer-end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.copyright a{
+    transition: all 0.5s;
+}
+
+.copyright a:hover{
+    color: var(--third-color);
 }
