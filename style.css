@@ -99,6 +99,7 @@ button:hover{
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 .nav ul{
@@ -130,6 +131,8 @@ button:hover{
     align-items: center;
     background: url("images/cartoon.png");
     height: 595px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .banner-title{
@@ -244,3 +247,93 @@ button:hover{
 .copyright a:hover{
     color: var(--third-color);
 }
+
+/* books section */
+
+.books-sections{
+    padding: 30px 250px;
+    text-align: center;
+}
+
+.books{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.front-cover img{
+    height: 300px;
+}
+
+.new-tag{
+    position: absolute;
+    
+    /* color: var(--fourth-color); */
+    color: rgb(255, 178, 36);
+    font-size: 35px;
+}
+
+.new-text{
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 17px;
+}
+
+.cover{
+    width: 192px;
+    background-color: rgb(148, 66, 66);
+    position:absolute;
+}
+
+.front-cover {
+    position: relative;
+}
+
+.front-cover > .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #a782959d;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+.front-cover:hover > .cover {
+    height: 300px;
+}
+
+.front-cover .bname{
+    width: 192px;
+}
+
+.b-section-title{
+    font-size: 30px;
+}
+
+.b-section-text{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 250px;
+}
+
+.more{
+    position: relative;
+    left: 45%;
+    padding: 10px 10px 0px 10px;
+    transition: all 0.5s;
+}
+
+.more a{
+    color: black;
+    text-decoration: none;
+}
+.more:hover{
+    transform: translateX(20px);
+}
+
+/* reference
+        <!-- http://girlreporter.blogspot.com/2013/05/top-ten-tuesday-7-top-ten-favorite-book_21.html --> */
